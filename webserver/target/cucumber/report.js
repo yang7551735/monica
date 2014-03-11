@@ -1,4 +1,141 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("com/monica/webserver/startServer.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("com/monica/webserver/accessServer.feature");
+formatter.feature({
+  "id": "url-to-access-webserver,and-can-get-response-from-server",
+  "description": "",
+  "name": "url to access WebServer,and can get response from server",
+  "keyword": "Feature",
+  "line": 2
+});
+formatter.before({
+  "duration": 121438914,
+  "status": "passed"
+});
+formatter.scenario({
+  "id": "url-to-access-webserver,and-can-get-response-from-server;access-server\u0027s-servlet",
+  "description": "",
+  "name": "access server\u0027s servlet",
+  "keyword": "Scenario",
+  "line": 4,
+  "type": "scenario"
+});
+formatter.step({
+  "name": "webServer is start",
+  "keyword": "Given ",
+  "line": 5
+});
+formatter.step({
+  "name": "url \"http://127.0.0.1:8080/testServlet.do\" access servlet",
+  "keyword": "When ",
+  "line": 6
+});
+formatter.step({
+  "name": "response from server \"testServlet\u0027s response\"",
+  "keyword": "Then ",
+  "line": 7
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.before({
+  "duration": 14545634,
+  "status": "passed"
+});
+formatter.scenario({
+  "id": "url-to-access-webserver,and-can-get-response-from-server;access-server\u0027s-servlet-with-param;params;2",
+  "description": "",
+  "name": "access server\u0027s servlet with param",
+  "keyword": "Scenario Outline",
+  "line": 16,
+  "type": "scenario"
+});
+formatter.step({
+  "name": "webServer is start",
+  "keyword": "Given ",
+  "line": 10
+});
+formatter.step({
+  "name": "url \"http://127.0.0.1:8080/testServlet.do?param1\u003daaa\" access servlet",
+  "keyword": "When ",
+  "line": 11,
+  "matchedColumns": [
+    0
+  ]
+});
+formatter.step({
+  "name": "response from server \"testServlet\u0027s response param1\u003daaa\"",
+  "keyword": "Then ",
+  "line": 12,
+  "matchedColumns": [
+    0
+  ]
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.before({
+  "duration": 14479658,
+  "status": "passed"
+});
+formatter.scenario({
+  "id": "url-to-access-webserver,and-can-get-response-from-server;access-server\u0027s-servlet-with-param;params;3",
+  "description": "",
+  "name": "access server\u0027s servlet with param",
+  "keyword": "Scenario Outline",
+  "line": 17,
+  "type": "scenario"
+});
+formatter.step({
+  "name": "webServer is start",
+  "keyword": "Given ",
+  "line": 10
+});
+formatter.step({
+  "name": "url \"http://127.0.0.1:8080/testServlet.do?param1\u003daaa\u0026param2\u003dbbb\" access servlet",
+  "keyword": "When ",
+  "line": 11,
+  "matchedColumns": [
+    0
+  ]
+});
+formatter.step({
+  "name": "response from server \"testServlet\u0027s response param1\u003daaa\u0026param2\u003dbbb\"",
+  "keyword": "Then ",
+  "line": 12,
+  "matchedColumns": [
+    0
+  ]
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.uri("com/monica/webserver/startServer.feature");
 formatter.feature({
   "id": "webserver-can-start-in-client-application",
   "description": "Servlet class with @WebServlet can be loaded into WebServer",
@@ -7,7 +144,7 @@ formatter.feature({
   "line": 2
 });
 formatter.before({
-  "duration": 50247147,
+  "duration": 21345130,
   "status": "passed"
 });
 formatter.scenario({
@@ -29,10 +166,10 @@ formatter.step({
   "line": 7
 });
 formatter.match({
-  "location": "WebServerStarterTest.invoke_start_method()"
+  "location": "WebServerTest.invoke_start_method()"
 });
 formatter.result({
-  "duration": 81664201,
+  "duration": 232441802,
   "status": "passed"
 });
 formatter.match({
@@ -42,14 +179,14 @@ formatter.match({
       "offset": 9
     }
   ],
-  "location": "WebServerStarterTest.use_url_can_access_the_server_successful(String)"
+  "location": "WebServerTest.use_url_can_access_the_server_successful(String)"
 });
 formatter.result({
-  "duration": 4969872,
+  "duration": 7656215,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3559668,
+  "duration": 14147819,
   "status": "passed"
 });
 formatter.scenario({
@@ -82,17 +219,17 @@ formatter.match({
       "offset": 18
     }
   ],
-  "location": "WebServerStarterTest.binding_port_with(int)"
+  "location": "WebServerTest.binding_port_with(int)"
 });
 formatter.result({
-  "duration": 13395818,
+  "duration": 8730411,
   "status": "passed"
 });
 formatter.match({
-  "location": "WebServerStarterTest.invoke_start_method()"
+  "location": "WebServerTest.invoke_start_method()"
 });
 formatter.result({
-  "duration": 8660,
+  "duration": 21015,
   "status": "passed"
 });
 formatter.match({
@@ -102,10 +239,10 @@ formatter.match({
       "offset": 9
     }
   ],
-  "location": "WebServerStarterTest.use_url_can_access_the_server_successful(String)"
+  "location": "WebServerTest.use_url_can_access_the_server_successful(String)"
 });
 formatter.result({
-  "duration": 55164,
+  "duration": 188155,
   "status": "passed"
 });
 });
